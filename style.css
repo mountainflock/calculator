@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.display {
+  height: 46px;
+  width: 229px;
+  border: solid 2px grey;
+  border-radius: 4px;
+  font-size: 40px;
+  color: #333;
+  background-color: #ccc;
+  font-family: "Codystar", sans-serif;
+  text-align: end;
+  overflow: hidden;
+  padding: 0 4px;
+}
+
+button {
+  height: 54px;
+  width: 54px;
+  font-size: 20px;
+}
