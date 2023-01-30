@@ -35,10 +35,10 @@ body {
 button {
   height: 54px;
   width: 54px;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 4px;
   border: none;
-  font-family: "Hind", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .zero {
