@@ -28,17 +28,19 @@ body {
   font-family: "Anek Latin", sans-serif;
   text-align: end;
   overflow: hidden;
+  text-overflow: ellipsis;
   padding: 0 6px;
 }
 
 button {
   height: 54px;
   width: 54px;
-  font-size: 24px;
+  font-size: 22px;
   border-radius: 4px;
   border: none;
-  font-family: "Baloo Bhaina 2", sans-serif;
+  font-family: "Hind", sans-serif;
 }
+
 .zero {
   width: 112px;
 }
@@ -55,22 +57,6 @@ button {
   background-color: #ffe066;
 }
 
-.dot {
-  background-color: buttonface;
+.decimal {
+  background-color: #f2f2f2;
 }
-
-/* .percent {
-  font-size: 20px;
-} */
-
-/* .c {
-  font-size: 22px;
-} */
-
-/* .multiply {
-  font-size: 22px;
-}
-
-.divide {
-  font-size: 26px;
-} */
