@@ -75,15 +75,16 @@ for (let operator of operators) {
 buttonEquals.addEventListener("click", () => {
   equals();
   operation = null;
-  currentNumber = "0";
 });
 
 function equals() {
-  if (operation !== null) {
+  if (operation !== null && currentNumber !== "") {
     const result = operate(operation, currentResult, parseFloat(currentNumber));
     currentNumber = `${result}`;
     refresh();
     currentResult = 0;
+  } else if (currentNumber === "") {
+    currentNumber = display.textContent;
   }
 }
 
