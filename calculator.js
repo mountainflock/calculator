@@ -89,8 +89,13 @@ function equals() {
 }
 
 buttonNegative.addEventListener("click", () => {
-  currentNumber = `${parseFloat(currentNumber) * -1}`;
-  refresh();
+  if (currentNumber === "0") {
+    currentNumber = "-";
+    refresh();
+  } else {
+    currentNumber = `-${currentNumber}`;
+    refresh();
+  }
 });
 
 buttonPercent.addEventListener("click", () => {
