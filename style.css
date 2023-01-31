@@ -48,9 +48,7 @@ button {
   width: 112px;
 }
 
-.symbol,
 .percent {
-  background-color: #bfbfbf;
   font-family: "Poppins", sans-serif;
 }
 
@@ -65,7 +63,52 @@ button {
 }
 
 .c,
-.negative {
+.negative,
+.percent {
   background-color: #bfbfbf;
+}
+
+.c,
+.negative {
   font-family: "Open Sans", sans-serif;
+}
+
+.number:hover,
+.zero:hover,
+.decimal:hover {
+  background-color: #d9d9d9;
+  transition: all 0.2s;
+}
+
+.number:active,
+.zero:active,
+.decimal:active {
+  background-color: #bfbfbf;
+  transition: all 0.2s;
+}
+
+.operator:hover,
+.equals:hover {
+  background-color: #ffdb4d;
+  transition: all 0.2s;
+}
+
+.operator:active,
+.equals:active {
+  background-color: #ffcc00;
+  transition: all 0.2s;
+}
+
+.c:hover,
+.negative:hover,
+.percent:hover {
+  background-color: #a6a6a6;
+  transition: all 0.2s;
+}
+
+.c:active,
+.negative:active,
+.percent:active {
+  background-color: #8c8c8c;
+  transition: all 0.2s;
 }
