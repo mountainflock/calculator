@@ -41,7 +41,10 @@ button {
   color: #000;
 }
 
-.number {
+.number,
+.zero,
+.decimal {
+  background-color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -57,10 +60,6 @@ button {
 .equals {
   background-color: #ffe066;
   font-family: "Poppins", sans-serif;
-}
-
-.decimal {
-  background-color: #f2f2f2;
 }
 
 .c,
@@ -81,24 +80,24 @@ button {
   transition: all 0.2s;
 }
 
-.number:active,
+/* .number:active,
 .zero:active,
 .decimal:active {
   background-color: #bfbfbf;
   transition: all 0.2s;
-}
+} */
 
 .operator:hover,
 .equals:hover {
-  background-color: #ffdb4d;
+  background-color: #ffcc00;
   transition: all 0.2s;
 }
-
+/* 
 .operator:active,
 .equals:active {
   background-color: #ffcc00;
   transition: all 0.2s;
-}
+} */
 
 .c:hover,
 .negative:hover,
@@ -107,9 +106,9 @@ button {
   transition: all 0.2s;
 }
 
-.c:active,
+/* .c:active,
 .negative:active,
 .percent:active {
   background-color: #8c8c8c;
   transition: all 0.2s;
-}
+} */
