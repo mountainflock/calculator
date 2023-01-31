@@ -38,7 +38,10 @@ button {
   font-size: 20px;
   border-radius: 4px;
   border: none;
-  font-family: "Urbanist", sans-serif;
+}
+
+.number {
+  font-family: "Open Sans", sans-serif;
 }
 
 .zero {
@@ -46,17 +49,23 @@ button {
 }
 
 .symbol,
-.c,
-.negative,
 .percent {
   background-color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
 }
 
 .operator,
 .equals {
   background-color: #ffe066;
+  font-family: "Poppins", sans-serif;
 }
 
 .decimal {
   background-color: #f2f2f2;
+}
+
+.c,
+.negative {
+  background-color: #bfbfbf;
+  font-family: "Open Sans", sans-serif;
 }
