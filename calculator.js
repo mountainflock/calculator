@@ -13,6 +13,7 @@ function operate(op, a, b) {
   } else if ((a === 0.1 || b === 0.1) && op === "+") {
     return operations[op](a, b).toFixed(1);
   }
+  if (isNaN(operations[op](a, b))) return "ERR";
   return operations[op](a, b);
 }
 
@@ -66,6 +67,7 @@ for (let operator of operators) {
     if (operation !== null) {
       equals();
     }
+
     operation = operator.textContent;
     currentResult = parseFloat(currentNumber);
     currentNumber = "";
@@ -78,13 +80,11 @@ buttonEquals.addEventListener("click", () => {
 });
 
 function equals() {
-  if (operation !== null && currentNumber !== "") {
+  if (operation !== null) {
     const result = operate(operation, currentResult, parseFloat(currentNumber));
     currentNumber = `${result}`;
-    refresh();
     currentResult = 0;
-  } else if (currentNumber === "") {
-    currentNumber = display.textContent;
+    refresh();
   }
 }
 
