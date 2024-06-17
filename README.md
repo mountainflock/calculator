@@ -4,7 +4,7 @@ This project is a part of the [Odin](https://www.theodinproject.com) curriculum 
 
 The calculator includes all the standard functions: addition, subtraction, multiplication, division, calculation interest, flipping the sign and a decimal button.
 
-Live preview can be found [here](https://mountainflock.github.io/calculator/)
+Live preview can be found [here](https://mountainflockscalculator.netlify.app).
 
 ## Technologies used: 
 
