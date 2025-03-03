@@ -14,6 +14,7 @@ function operate(op, a, b) {
     return operations[op](a, b).toFixed(1);
   }
   if (isNaN(operations[op](a, b))) return "ERR";
+  if (operations[op](a, b) === Infinity) return "ERR";
   return operations[op](a, b);
 }
 
@@ -67,7 +68,6 @@ for (let operator of operators) {
     if (operation !== null) {
       equals();
     }
-
     operation = operator.textContent;
     currentResult = parseFloat(currentNumber);
     currentNumber = "";
